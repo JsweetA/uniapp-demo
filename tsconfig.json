@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+    },
+    "outDir": "dist",
+    "allowJs": true,
+    "lib": ["esnext", "dom"],
+    "declaration": true, // 生成相应的.d.ts文件
+    "types": ["@dcloudio/types"],
+    "ignoreDeprecations": "5.0",
+    "skipLibCheck": true, // 跳过声明文件检查
+    "esModuleInterop": false, // 不禁止命名空间引用
+    "allowSyntheticDefaultImports": true, // 不允许无默认导出的进行默认导入
+    "resolveJsonModule": true,
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "exclude": ["src/uni_modules"]
+}

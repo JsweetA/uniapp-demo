@@ -1,0 +1,21 @@
+{
+	"pages": [
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarBackgroundColor": "#3C9AFC",
+		"navigationBarTextStyle": "white"
+	},
+	"subPackages": []
+}
