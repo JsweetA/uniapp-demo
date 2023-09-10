@@ -42,7 +42,7 @@
 	</tm-app>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { reactive } from "vue";
 import { useLogin } from "@/store/login";
 

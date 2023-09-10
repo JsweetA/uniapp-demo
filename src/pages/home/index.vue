@@ -68,12 +68,11 @@
 		</tm-sheet>
 	</tm-app>
 </template>
-<script lang="ts" setup>
+<script setup>
 import { ref, computed, nextTick } from "vue";
-import { onShow, onLoad } from "@dcloudio/uni-app";
 
 const test = ref("");
-function search(val: string) {
+function search(val) {
 	console.log(val);
 }
 </script>
