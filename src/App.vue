@@ -2,28 +2,28 @@
 import { useTmpiniaStore } from "@/uni_modules/tmui/tool/lib/tmpinia";
 
 export default {
-	onLaunch: async function () {
-		const store = useTmpiniaStore();
-		store.setTmVuetifyDark(false); // 设置暗黑模式
+  onLaunch: async function () {
+    const store = useTmpiniaStore();
+    store.setTmVuetifyDark(false); // 设置暗黑模式
 
-		// 判断是否是登录状态
-		uni.getStorage({
-			key: "person",
-			success() {
-				// uni.reLaunch({ url: "/pages/index/index" });
-			},
-			fail(e) {
-				console.log(e);
-				uni.reLaunch({ url: "/pages/login/index" });
-			},
-		});
-	},
-	onShow: function () {
-		console.log("App Show");
-	},
-	onHide: function () {
-		console.log("App Hide");
-	},
+    // 判断是否是登录状态
+    uni.getStorage({
+      key: "person",
+      success() {
+        // uni.reLaunch({ url: "/pages/index/index" });
+      },
+      fail(e) {
+        console.log(e);
+        uni.reLaunch({ url: "/pages/login/index" });
+      },
+    });
+  },
+  onShow: function () {
+    console.log("App Show");
+  },
+  onHide: function () {
+    console.log("App Hide");
+  },
 };
 </script>
 

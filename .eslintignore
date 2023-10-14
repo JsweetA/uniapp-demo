@@ -1,0 +1,8 @@
+node_modules
+uni_modules
+pnpm-lock.yaml
+dist
+*.lock
+*.md
+*.html
+env.d.ts

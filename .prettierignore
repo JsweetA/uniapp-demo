@@ -1,0 +1,5 @@
+node_modules
+uni_modules
+pnpm-lock.yaml
+*.lock
+dist

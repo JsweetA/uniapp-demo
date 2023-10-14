@@ -1,14 +1,17 @@
-import { request } from "@/api/apiConfig";
-import { API } from "@/types/index";
+import { request } from '@/api/apiConfig';
+import { API } from '@/types/index';
 
+// GET, POST, PUT, DELETE
 const {
-	Methods: { GET, POST, PUT, DELETE },
+  Methods: { GET },
 } = API;
 
 export const queryXXX = async (params: API.Params) => {
-	const res = await request({
-		url: "/xxx",
-		method: GET,
-	});
-	return res;
+  console.log(params);
+
+  const res = await request({
+    url: '/xxx',
+    method: GET,
+  });
+  return res;
 };

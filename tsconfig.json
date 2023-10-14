@@ -3,7 +3,7 @@
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
+      "@/*": ["./src/*"]
     },
     "outDir": "dist",
     "allowJs": true,
@@ -14,7 +14,7 @@
     "skipLibCheck": true, // 跳过声明文件检查
     "esModuleInterop": false, // 不禁止命名空间引用
     "allowSyntheticDefaultImports": true, // 不允许无默认导出的进行默认导入
-    "resolveJsonModule": true,
+    "resolveJsonModule": true
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "exclude": ["src/uni_modules"]
