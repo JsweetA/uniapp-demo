@@ -1,5 +1,5 @@
-import { request } from '@/api/apiConfig';
-import { API } from '@/types/index';
+import { request } from "@/api/apiConfig";
+import { API } from "@/types/index";
 
 // GET, POST, PUT, DELETE
 const {
@@ -10,7 +10,7 @@ export const queryXXX = async (params: API.Params) => {
   console.log(params);
 
   const res = await request({
-    url: '/xxx',
+    url: "/xxx",
     method: GET,
   });
   return res;

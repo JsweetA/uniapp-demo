@@ -1,9 +1,9 @@
 export namespace API {
   export enum Methods {
-    GET = 'GET',
-    POST = 'POST',
-    PUT = 'PUT',
-    DELETE = 'DELETE',
+    GET = "GET",
+    POST = "POST",
+    PUT = "PUT",
+    DELETE = "DELETE",
   }
 
   export type ReqType = {
@@ -60,11 +60,11 @@ export namespace REQUEST {
   export const TOKEN_ERROR = 604;
   export const NORMAL = 200;
   export const ERROR = {
-    601: '网络异常，请稍后再试',
-    602: '处理异常，请稍后再试',
-    603: '无访问权限，请联系管理员',
-    604: '非法访问，签名不正确',
-    605: '未登录，请登录后再试',
-    606: '登录信息过期，请重新登录',
+    601: "网络异常，请稍后再试",
+    602: "处理异常，请稍后再试",
+    603: "无访问权限，请联系管理员",
+    604: "非法访问，签名不正确",
+    605: "未登录，请登录后再试",
+    606: "登录信息过期，请重新登录",
   };
 }

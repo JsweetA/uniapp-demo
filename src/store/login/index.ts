@@ -1,8 +1,8 @@
 // import { loginUser, logoutUser, bindWx } from "@/services/login";
-import { defineStore } from 'pinia';
+import { defineStore } from "pinia";
 
 // ts 不会直接as any 就能解决
-export const useLogin = defineStore('login', {
+export const useLogin = defineStore("login", {
   state: () => ({
     person: null,
   }),
@@ -11,9 +11,9 @@ export const useLogin = defineStore('login', {
       // 登录请求
       // const res = await loginUser(params);
       const res = {} as any;
-      uni.setStorageSync('token', res?.token);
-      uni.setStorageSync('unionId', res?.unionId);
-      uni.setStorageSync('person', JSON.stringify(res));
+      uni.setStorageSync("token", res?.token);
+      uni.setStorageSync("unionId", res?.unionId);
+      uni.setStorageSync("person", JSON.stringify(res));
 
       return res;
     },
@@ -23,7 +23,7 @@ export const useLogin = defineStore('login', {
       uni.clearStorage();
       uni.clearStorageSync();
       uni.reLaunch({
-        url: '/pages/login/index',
+        url: "/pages/login/index",
       });
     },
   },

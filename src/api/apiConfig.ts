@@ -1,11 +1,11 @@
-import createRequest from './requestFactory/createRequest';
-import createGetBaseUrl from './requestFactory/createBaseUrl';
+import createRequest from "./requestFactory/createRequest";
+import createGetBaseUrl from "./requestFactory/createBaseUrl";
 
 // 接口地址
 const hosts = {
-  DEV: '...',
-  UAT: '...',
-  PRO: '...',
+  DEV: "...",
+  UAT: "...",
+  PRO: "...",
 };
 
 const getBaseUrl = createGetBaseUrl(hosts);
