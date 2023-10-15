@@ -1,7 +1,12 @@
-node_modules
-uni_modules
+# dependence
+node_modules/
+uni_modules/
+
+# build
+dist/
+
+# config file
 pnpm-lock.yaml
-dist
 *.lock
 *.md
 *.html

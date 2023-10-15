@@ -1,10 +1,10 @@
 # dependence
-node_modules
-uni_modules
+node_modules/
+uni_modules/
 
 # config file
 pnpm-lock.yaml
 *.lock
 
 # build
-dist/**/*
+dist/

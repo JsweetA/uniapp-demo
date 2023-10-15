@@ -22,18 +22,21 @@ module.exports = {
     node: true,
   },
   globals: {
-    defineEmits: true,
-    document: true,
     uni: true,
     window: true,
-    defineProps: true,
-    defineExpose: true,
     $ref: true,
   },
   plugins: ["@typescript-eslint", "prettier", "vue"],
+
+  /*
+      "off"或者0    //关闭规则关闭
+      "warn"或者1    //在打开的规则作为警告（不影响退出代码）
+      "error"或者2    //把规则作为一个错误（退出代码触发时为1）
+    */
   rules: {
     "@typescript-eslint/no-explicit-any": ["off"],
     "@typescript-eslint/no-namespace": "off",
+
     "no-debugger": "error",
     "no-var": "error",
     "no-unused-vars": [
@@ -42,17 +45,12 @@ module.exports = {
       // catches unused variables but not args.
       { varsIgnorePattern: ".*", args: "none" },
     ],
-    /*
-      "off"或者0    //关闭规则关闭
-      "warn"或者1    //在打开的规则作为警告（不影响退出代码）
-      "error"或者2    //把规则作为一个错误（退出代码触发时为1）
-    */
     "no-func-assign": 2, //禁止重复的函数声明
     "no-implicit-coercion": 1, //禁止隐式转换
     "no-dupe-keys": 2, //在创建对象字面量时不允许键重复 {a:1,a:1}
     "no-dupe-args": 2, //函数参数不能重复
     "prefer-const": 0, // 首选const
-    // 变量命名小驼峰，文件名小驼峰
+    semi: ["error", "always"],
     camelcase: [
       "error",
       {
@@ -67,7 +65,6 @@ module.exports = {
     "vue/multi-word-component-names": 0,
     "vue/html-self-closing": "off",
     "vue/attribute-hyphenation": 0,
-    // most of the codebase are expected to be env agnostic
 
     // 关闭一些规则防止eslint和prettier发生冲突
     "prettier/prettier": "error",
