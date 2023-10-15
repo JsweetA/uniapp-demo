@@ -3,16 +3,16 @@ module.exports = {
   // 默认情况eslint内置的解析器是对于标准JavaScript运行时的版本兼容，而代码中有一些ts，需要将ts解析成eslint能识别的AST
   // parser: "@typescript-eslint/parser",
   // 小众规则（eslint内置推荐的）
-  // parser: "vue-eslint-parser",
+  parser: "vue-eslint-parser",
 
   parserOptions: { parser: "@typescript-eslint/parser" },
   extends: [
     "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:vue/vue3-essential",
     "plugin:vue/vue3-recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    // "airbnb-base",
+
     // 放到最后保证prettier规则覆盖eslint规则
     "prettier",
   ],
@@ -25,6 +25,7 @@ module.exports = {
     uni: true,
     window: true,
     $ref: true,
+    $: true,
   },
   plugins: ["@typescript-eslint", "prettier", "vue"],
 

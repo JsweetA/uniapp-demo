@@ -39,8 +39,8 @@
     "build:quickapp-webview-huawei": "uni build -p quickapp-webview-huawei",
     "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
     "type-check": "vue-tsc --noEmit",
-    "format": "prettier --write **/*.{js,ts,scss,vue}",
-    "format-watch": "onchange -d 1000 **/*.{js,ts,scss,vue} -- prettier --config .prettierrc --write {{changed}}",
+    "format": "prettier --write **/*.{js,ts,scss,vue,mjs}",
+    "format-watch": "onchange -d 1000 **/*.{js,ts,scss,vue,mjs} -- prettier --config .prettierrc --write {{changed}}",
     "lint-fix": "eslint --fix ./ --ext **/*.{js,ts,vue} --max-warnings=0",
     "lint": "eslint ./ --ext **/*.{js,ts,vue} --max-warnings=0"
   },
@@ -78,7 +78,6 @@
     "@vue/tsconfig": "^0.1.3",
     "autoprefixer": "^10.4.2",
     "eslint": "^8.51.0",
-    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-prettier": "^5.0.1",
