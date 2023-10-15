@@ -1,6 +1,6 @@
-import Fly from 'flyio/dist/npm/fly';
-import { Notification } from '@arco-design/web-vue';
-import { getBaseUrl } from '../apiConfig';
+import Fly from "flyio/dist/npm/fly";
+import { Notification } from "@arco-design/web-vue";
+import { getBaseUrl } from "../apiConfig";
 
 const fly = new Fly();
 

@@ -1,20 +1,20 @@
-import Fly from 'flyio/dist/npm/fly';
+import Fly from "flyio/dist/npm/fly";
 
 const fly = new Fly();
 
 export default function request(url, data) {
   return fly
     .request(url, data, {
-      method: 'PUT',
+      method: "PUT",
       headers: {
-        'Content-Type': 'application/octet-stream',
-        accept: '*/*',
+        "Content-Type": "application/octet-stream",
+        accept: "*/*",
       },
     })
     .then((d) => {
-      console.log('request result:', d);
+      console.log("request result:", d);
     })
     .catch((e) => {
-      console.log('error', e);
+      console.log("error", e);
     });
 }

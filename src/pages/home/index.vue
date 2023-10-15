@@ -25,7 +25,7 @@
       <tm-input v-model="test" prefixLabel="字符统计" :margin="[0, 24]" showCharNumber :maxlength="10"></tm-input>
       <tm-input v-model="test" suffix="tmicon-clock-fill" showClear></tm-input>
       <tm-input prefix="tmicon-dollar" suffixLabel="元" :margin="[0, 24]"></tm-input>
-      <tm-input :searchWidth="120" @search="search" prefix="tmicon-search" searchLabel="搜索"></tm-input>
+      <tm-input :searchWidth="120" prefix="tmicon-search" searchLabel="搜索" @search="search"></tm-input>
     </tm-sheet>
     <tm-sheet>
       <tm-text :font-size="24" _class="text-weight-b" label="样式配置"></tm-text>
@@ -48,9 +48,9 @@
   </tm-app>
 </template>
 <script setup>
-import { ref, computed, nextTick } from 'vue';
+import { ref } from "vue";
 
-const test = ref('');
+const test = ref("");
 function search(val) {
   console.log(val);
 }

@@ -43,25 +43,24 @@
 </template>
 
 <script setup>
-import { reactive } from 'vue';
-import { useLogin } from '@/store/login';
+import { reactive } from "vue";
+import { useLogin } from "@/store/login";
 
 const store = useLogin();
 const login = reactive({
-  key: '',
-  value: '',
+  key: "",
+  value: "",
 });
 
 const handleLogin = async () => {
-  var a = 1;
   const res = await store?.login(login);
   res &&
     uni.reLaunch({
-      url: '/pages/home/index',
+      url: "/pages/home/index",
     });
 };
 </script>
 
 <style scoped lang="scss">
-@import './index.scss';
+@import "./index";
 </style>

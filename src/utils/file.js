@@ -1,8 +1,8 @@
-import { upFile1, querySTS } from '@/api/request/upload';
+import { upFile1, querySTS } from "@/api/request/upload";
 
 // 获取文件名尾缀
 export const getExt = (path) => {
-  return path?.split('.').pop();
+  return path?.split(".").pop();
 };
 
 export const uploadFile = async (url, params = {}) => {
@@ -24,8 +24,8 @@ export const uploadFile = async (url, params = {}) => {
         },
         fail: () => {
           uni.showToast({
-            icon: 'error',
-            title: '网络错误！',
+            icon: "error",
+            title: "网络错误！",
             duration: 3000,
           });
           fail(data);
